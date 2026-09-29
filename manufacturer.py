@@ -1,7 +1,8 @@
 class manufacturer:
     def __init__(self, name, country):
-        self.name = name
-        self.country = country
+        self._name = name
+        self._country = country
+
     @property
     def name(self):
         return self._name
